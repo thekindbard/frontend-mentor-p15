@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap");
+body {
+  max-width: 400px;
+  margin: auto;
+  padding-top: 100px;
+  font-size: 34px;
+  font-family: Spartan;
+}
+
+body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+}
+
+body header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+body header .themes {
+  font-size: 0.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  word-spacing: 4px;
+}
+
+body header .themes .switch {
+  width: 40px;
+  height: 100%;
+  border-radius: 100px;
+  position: relative;
+  cursor: pointer;
+}
+
+body header .themes .switch::after {
+  content: "THEME";
+  font-size: 0.8rem;
+  margin-top: 0.1rem;
+  position: absolute;
+  right: 50px;
+}
+
+body header .themes .switch__circle {
+  height: 70%;
+  width: 13px;
+  background-color: red;
+  border-radius: 20px;
+  margin-top: 2px;
+  position: absolute;
+}
+
+body header .themes .switch__circle--left {
+  left: 4px;
+  right: unset;
+}
+
+body header .themes .switch__circle--right {
+  left: unset;
+  right: 4px;
+}
+
+body header .themes .switch__circle--center {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+body main {
+  margin-bottom: 20px;
+}
+
+body main .screen {
+  margin: 10px 0;
+  height: 40px;
+  border-radius: 5px;
+  text-align: right;
+  padding: 20px 15px;
+  color: white;
+}
+
+body main .keys {
+  background-color: #232c43;
+  border-radius: 5px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+body main .keys__row {
+  display: -ms-grid;
+  display: grid;
+  gap: 10px;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+body main .keys__row .keys__key {
+  text-align: center;
+  border-radius: 5px;
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+body main .keys__row--ultimate {
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+body main .keys__row .keys__key--blue {
+  color: white;
+}
+
+body main .keys__row .keys__key--red {
+  color: white;
+}
+
+body.light {
+  background-color: #e6e6e6;
+}
+
+body.light header {
+  color: #35352c;
+}
+
+body.light header .themes .switch {
+  background-color: #d1cccc;
+}
+
+body.light main .screen {
+  background-color: #ededed;
+  color: #35352c;
+}
+
+body.light main .keys {
+  background-color: #d1cccc;
+}
+
+body.light main .keys__row .keys__key {
+  background-color: #e5e4e1;
+  -webkit-box-shadow: 0 3px 0 #a69d91;
+          box-shadow: 0 3px 0 #a69d91;
+}
+
+body.light main .keys .keys__key--blue {
+  background-color: #377f86;
+  -webkit-box-shadow: 0 3px 0 #1b5f65;
+          box-shadow: 0 3px 0 #1b5f65;
+}
+
+body.light main .keys .keys__key--red {
+  background-color: #ca5502;
+  -webkit-box-shadow: 0 3px 0 #893901;
+          box-shadow: 0 3px 0 #893901;
+}
+
+body.light .attribution {
+  color: #35352c;
+}
+
+body.blue {
+  background-color: #3a4764;
+}
+
+body.blue header .themes .switch {
+  background-color: #232c43;
+}
+
+body.blue main .screen {
+  background-color: #182034;
+}
+
+body.blue main .keys {
+  background-color: #232c43;
+}
+
+body.blue main .keys__row .keys__key {
+  -webkit-box-shadow: 0 3px 0 #b4a597;
+          box-shadow: 0 3px 0 #b4a597;
+  background-color: #eae3dc;
+}
+
+body.blue main .keys .keys__key--blue {
+  background-color: #637097;
+  -webkit-box-shadow: 0 3px 0 #404e72;
+          box-shadow: 0 3px 0 #404e72;
+}
+
+body.blue main .keys .keys__key--red {
+  background-color: #d03f2f;
+  -webkit-box-shadow: 0 3px 0 #93261a;
+          box-shadow: 0 3px 0 #93261a;
+}
+
+body.dark {
+  background-color: #160628;
+}
+
+body.dark header .themes .switch {
+  background-color: #1d0934;
+}
+
+body.dark main .screen {
+  background-color: #1d0934;
+}
+
+body.dark main .keys {
+  background-color: #1d0934;
+  color: #ffe53d;
+}
+
+body.dark main .keys__row .keys__key {
+  -webkit-box-shadow: 0 3px 0 #871c9c;
+          box-shadow: 0 3px 0 #871c9c;
+  background-color: #341c4f;
+}
+
+body.dark main .keys .keys__key--blue {
+  background-color: #58077d;
+  -webkit-box-shadow: 0 3px 0 #bc15f4;
+          box-shadow: 0 3px 0 #bc15f4;
+}
+
+body.dark main .keys .keys__key--red {
+  background-color: #00e0d1;
+  -webkit-box-shadow: 0 3px 0 #6cf9f2;
+          box-shadow: 0 3px 0 #6cf9f2;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: white;
+}
+
+.attribution a {
+  color: red;
+}
+
+@media (max-width: 500px) {
+  body {
+    padding: 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
